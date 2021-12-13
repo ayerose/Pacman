@@ -250,7 +250,7 @@ function checkForGameOver() {
 }
 
 function checkForWin() {
-  if (score === 100) {
+  if (score === 250) {
     ghosts.forEach((ghost) => clearInterval(ghost.timerId));
     document.removeEventListener('keyup', control)
     alert("You WON!") 
